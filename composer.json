@@ -1,5 +1,5 @@
 {
-    "name": "izi-dev/KeyValueSuggestion",
+    "name": "izi-dev/nova-key-value-suggestion-field",
     "description": "A Laravel Nova field.",
     "keywords": [
         "laravel",
