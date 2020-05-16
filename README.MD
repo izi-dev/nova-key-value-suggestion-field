@@ -4,7 +4,7 @@
 
 ### Demo
 
-![Demo](https://raw.githubusercontent.com/izi-dev/nova-key-value-suggestion-field/master/docs/demo.gif)
+![Demo](https://raw.githubusercontent.com/izi-dev/nova-key-value-suggestion-field/master/demo/demo.gif)
 
 <br />
 
