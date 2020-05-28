@@ -17,7 +17,7 @@ class KeyValueSuggestion extends KeyValue
      */
     public $component = 'KeyValueSuggestion';
 
-    private array $configSuggestion;
+    private $configSuggestion = [];
 
     /**
      * Create a new field.
@@ -27,7 +27,7 @@ class KeyValueSuggestion extends KeyValue
      * @param callable|null $resolveCallback
      * @return void
      */
-    public function __construct($name, $attribute = null, callable $resolveCallback = null)
+    public function __construct($name, $attribute = null, $resolveCallback = null)
     {
         $this->configSuggestion["configSuggestion"] =
             [
@@ -40,14 +40,14 @@ class KeyValueSuggestion extends KeyValue
         parent::__construct($name, $attribute, $resolveCallback);
     }
 
-    public function suggestion(array $list): self
+    public function suggestion($list)
     {
         $this->configSuggestion["configSuggestion"]["list"] = $list;
 
         return $this;
     }
 
-    public function display(string $title,string $showInput, string $description = null): self
+    public function display($title, $showInput, $description = null)
     {
         $this->configSuggestion["configSuggestion"]["title"] = $title;
         $this->configSuggestion["configSuggestion"]["showInput"] = $showInput;
@@ -56,14 +56,14 @@ class KeyValueSuggestion extends KeyValue
         return $this;
     }
 
-    public function max(int $max): self
+    public function max($max)
     {
         $this->configSuggestion["configSuggestion"]["max"] = $max;
 
         return $this;
     }
 
-    public function length(int $length): self
+    public function length($length)
     {
         $this->configSuggestion["configSuggestion"]["length"] = $length;
 
