@@ -41,8 +41,7 @@
                                     {{ suggestion[configSuggestion.title] }}
                                 </p>
                                 <p class="text-90" v-else>{{ suggestion }}</p>
-                                <p v-if="configSuggestion.description" class="text-xs mt-1 text-80">
-                                    {{ suggestion[configSuggestion.description] }}
+                                <p v-if="configSuggestion.description" class="text-xs mt-1 text-80" v-html="suggestion[configSuggestion.description]">
                                 </p>
                             </div>
                         </div>
