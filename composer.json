@@ -2,8 +2,7 @@
     "name": "izi-dev/nova-key-value-suggestion-field",
     "description": "A Laravel Nova field.",
     "keywords": [
-        "laravel",
-        "nova"
+        "laravel", "nova", "key", "value", "suggestion", "field"
     ],
     "license": "MIT",
     "require": {
